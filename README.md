@@ -7,6 +7,7 @@ added information to the first member. There are a few easy bugs that still need
 
 Bugs:
 1.) Bubble box does not expand if content gets too big.
-2.) If any member other than the first one is clicked, undefined will be returned on the bubble.
-3.) When hovering over the members, the pointer should turn into a glove as though it was a link
-4.) The bubble does not directly center to the page based on screen resolution. 
+
+2.) If any member other than the first one is clicked, undefined will be returned 
+on the bubble. If no information is given. I at least put all of the members names
+on the bubble to cover this minor problem up.
