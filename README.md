@@ -6,8 +6,7 @@ Click on the first member to see this affect at its best. It works for all the o
 added information to the first member. There are a few easy bugs that still need to be fixed.
 
 Bugs:
-1.) Transparent overlay does not cover the entire screen if you scroll.
-2.) Bubble box does not expand if content gets too big.
-3.) If any member other than the first one is clicked, undefined will be returned on the bubble.
-4.) When hovering over the members, the pointer should turn into a glove as though it was a link
-5.) The bubble does not directly center to the page based on screen resolution. 
+1.) Bubble box does not expand if content gets too big.
+2.) If any member other than the first one is clicked, undefined will be returned on the bubble.
+3.) When hovering over the members, the pointer should turn into a glove as though it was a link
+4.) The bubble does not directly center to the page based on screen resolution. 
