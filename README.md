@@ -10,3 +10,4 @@ Bugs:
 2.) Bubble box does not expand if content gets too big.
 3.) If any member other than the first one is clicked, undefined will be returned on the bubble.
 4.) When hovering over the members, the pointer should turn into a glove as though it was a link
+5.) The bubble does not directly center to the page based on screen resolution. 
