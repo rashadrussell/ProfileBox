@@ -1,9 +1,15 @@
+// Create InfoBubble constructor
+// infoList parameter gets an unordered list DOM element
 function InfoBubble(infoList) {
 
     this.list = infoList;
 
 }
 
+/* 
+Create "setTransparentOverlay" static method to place a transparent screen to cover
+the page when an li element is clicked.
+*/
 InfoBubble.setTransparentOverlay = function() {
   $("body").prepend('<div id="transparentOverlay"></div>');
 
@@ -13,6 +19,9 @@ InfoBubble.setTransparentOverlay = function() {
   });
 }
 
+/*
+Create "bubble" static method. This method creates the profile card.
+*/
 InfoBubble.bubble = function(info) {
   $("body").append('<div id="bubble">' + info +'</div>');
 
@@ -31,6 +40,10 @@ InfoBubble.bubble = function(info) {
         },200);
 }
 
+/*
+Create the "getInfo" instance method. This method gathers the profile information of each
+members' li element.
+*/
 InfoBubble.prototype.getInfo = function(){
 
   $(this.list).find("li").bind("click", function(){
@@ -41,6 +54,10 @@ InfoBubble.prototype.getInfo = function(){
 
 }
 
+/*
+Create "popup" instance method. This method combines the "setTransparentOverlay" and
+the "bubble" methods to create the entire effect.
+ */
 InfoBubble.prototype.popup = function() {
   $(this.list).find("li").bind("click", function(){
 
