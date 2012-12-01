@@ -6,6 +6,7 @@ Click on the first member to see this affect at its best. It works for all the o
 added information to the first member. There are a few easy bugs that still need to be fixed.
 
 Bugs:
+
 1.) Bubble box does not expand if content gets too big.
 
 2.) If any member other than the first one is clicked, undefined will be returned 
