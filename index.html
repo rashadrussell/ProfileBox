@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Hover Bubble</title>
+<style>
+html, body, div, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 800px;
+    height: 900px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+#members_list {
+    overflow: hidden;
+}
+
+#members_list li {
+    width: 225px;
+    float: left;
+}
+
+#members_list li #profile_info {
+  display: none;
+}
+
+#bubble {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 5px;
+    color: #333;
+    position: absolute;
+    z-index: 1000;
+    margin: 190px 390px 390px 390px;
+    padding: 10px;
+}
+
+#bubble li {
+  list-style-type: none;
+}
+
+#bubble .skills li {
+    width: 80px;
+    float: left;
+}
+
+#transparentOverlay {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+
+</style>
+
+
+
+    
+</head>
+
+<body>
+<div id="container">
+    
+    <ul id="members_list">
+	<li><span class="member">Rashad Russell</span> <span class="position_title" style="color: #662a2a;"><span class="position_title" style="color: #662a2a;">(Co-Chair)
+</span></span>
+<div id="profile_info">
+<ul>
+	<li>
+<h4>Rashad Russell (Co-Chair)</h4>
+</li>
+	<li><strong>Website:</strong> <a href="http://www.rashadrussell.com" target="_blank">www.rashadrussell.com</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/rashadrussell" target="_blank">github.com/rashadrussell</a></li>
+	<li><strong>Email:</strong> rashadrussellwebdesign@gmail.com</li>
+	<li><strong>Year:</strong> Sophomore</li>
+	<li>
+<p class="description"><strong>Description:</strong> I am a web programmer who loves the frontend, UI design, and am not afraid to jump into the backend if needed.</p>
+</li>
+	<li>
+<h4>Skills</h4>
+<ul class="skills">
+<li>HTML</li> 
+<li>CSS</li>
+<li>Javascript</li>
+<li>PHP</li>
+<li>Java</li>
+<li>Wordpress</li>
+<li>Photoshop</li>
+<li>Git</li>
+</ul>
+</li>
+</ul>
+</div></li>
+	<li><span class="member">Taylor Fairbank</span> <span class="position_title" style="color: #662a2a;">(Co-Chair)</span></li>
+	<li><span class="member">Jatin Pandey</span> <span class="position_title" style="color: #662a2a;">(Treasurer)</span></li>
+	<li><span class="member">Nathan Hibner</span></li>
+	<li><span class="member">Daniel Tong</span></li>
+	<li><span class="member">Jay Chae</span></li>
+	<li><span class="member">Zhiyuan Zheng</span></li>
+	<li><span class="member">Kenny Wang</span></li>
+	<li><span class="member">Edward Wibisono</span></li>
+	<li><span class="member">Kay Byun</span></li>
+	<li><span class="member">Harsh Singh</span></li>
+	<li><span class="member">Grace Gong</span></li>
+	<li><span class="member">Michael Marshall</span></li>
+	<li><span class="member">Ricky Newcomb</span></li>
+	<li><span class="member">Thomas Chen</span></li>
+	<li><span class="member">Nathan Arvan</span></li>
+	<li><span class="member">Daeyun Shin</span></li>
+	<li><span class="member">Eric Mills</span></li>
+	<li><span class="member">Brendan Rosario</span></li>
+	<li><span class="member">Jake Esmael</span></li>
+	<li><span class="member">Aditya Jain</span></li>
+	<li><span class="member">Brad Dushman</span></li>
+	<li><span class="member">Anarghya Mitra</span></li>
+	<li><span class="member">Eclair Gao</span></li>
+	<li><span class="member">Yalan Meng</span></li>
+	<li><span class="member">Ron Searl</span></li>
+	<li><span class="member">Bharat Sankaran</span></li>
+	<li><span class="member">Pulkit Chauhan</span></li>
+	<li><span class="member">Martin Wozniewicz</span></li>
+	<li><span class="member">Sebastian Wong</span></li>
+	<li><span class="member">Bob Ren</span></li>
+	<li><span class="member">Dhruv Bhatia</span></li>
+	<li><span class="member">Ciju Francis</span></li>
+	<li><span class="member">Irtefa Fairuz</span></li>
+	<li>Austin Shaf</li>
+	<li>Keegan Singh</li>
+	<li>Albert Plawinski</li>
+	<li>Sarvesh Ahuja</li>
+	<li>Mark Backsmeier</li>
+	<li>Akshay Singh</li>
+	<li>Brett Jurgens</li>
+	<li>Daniel Chen</li>
+	<li>Nathan Handler</li>
+	<li>Chizheng Wang</li>
+	<li>Chi Zhou</li>
+	<li>Dongming Lei</li>
+	<li>Prabhakar Jha</li>
+	<li>Simon Lee</li>
+	<li>Alex Sha</li>
+	<li>Ali M Sakr</li>
+	<li>Matthew Dierker</li>
+	<li>Dhruv Seth</li>
+	<li>Henry Lin</li>
+	<li>Jefferson James</li>
+	<li>Vinay Nagar</li>
+	<li>Bhuwan Khattar</li>
+	<li>Your name here?</li>
+</ul>
+        
+    
+</div>
+<script src="../jquery.js"></script>
+<script src="js/infoCard.js"></script>
+<script>
+(function(){
+	var list = document.getElementById("members_list");
+	var infoList = new InfoBubble(list);
+
+	infoList.popup();
+	infoList.getInfo();
+
+})();
+</script>
+
+
+</body>
+</html>
