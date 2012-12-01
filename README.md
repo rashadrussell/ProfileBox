@@ -1,7 +1,7 @@
 ProfileBox
 ==========
 
-A simple jquery popup bubble that can be used on members list webpages. I'm using this to 
+A simple jquery popup effect that can be used on members list webpages. I'm using this to 
 to display our club members' profile information if their names are clicked. I did this 
 from scratch to play around with jquery, and you can see its implementation on my clubs 
 website, http://www.acm.uiuc.edu/webmonkeys/2012/?page_id=93 . Click on the first member
