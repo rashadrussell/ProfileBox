@@ -2,7 +2,11 @@
 // infoList parameter gets an unordered list DOM element
 function InfoBubble(infoList) {
 
-    this.list = infoList;
+    var list = infoList;
+
+    getList = function(){
+      return list;
+    }
 
 }
 
@@ -46,7 +50,7 @@ members' li element.
 */
 InfoBubble.prototype.getInfo = function(){
 
-  $(this.list).find("li").bind("click", function(){
+  $(getList()).find("li").bind("click", function(){
 
       var info = $(this).find("#profile_info").html();
     
@@ -59,7 +63,7 @@ Create "popup" instance method. This method combines the "setTransparentOverlay"
 the "bubble" methods to create the entire effect.
  */
 InfoBubble.prototype.popup = function() {
-  $(this.list).find("li").bind("click", function(){
+  $(getList()).find("li").bind("click", function(){
 
     InfoBubble.setTransparentOverlay();
     InfoBubble.bubble($(this).find("#profile_info").html());    
