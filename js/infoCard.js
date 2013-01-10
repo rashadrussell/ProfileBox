@@ -1,6 +1,6 @@
 (function () {
 
-
+    
 
     // Create InfoCard constructor
     // infoList parameter gets an unordered list DOM element
@@ -13,7 +13,7 @@
     InfoCards.prototype = {
 
     /*
-     *  Initialize InfoCard
+     *  Initialize InfoCards
      */
         init : function () {
 
@@ -43,7 +43,7 @@
         popup : function () {
 
           /* 
-           *  Create "setTransparentOverlay" static method to place a transparent screen to cover
+           *  Create "setTransparentOverlay" method to place a transparent screen to cover
            *  the page when an li element is clicked.
            */
             function setTransparentOverlay() {
@@ -60,7 +60,7 @@
             }
 
           /*
-           *  Create "bubble" static method. This method creates the profile card.
+           *  Create "bubble" method. This method creates the profile card.
            */
             function bubble(info) {
 
