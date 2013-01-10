@@ -453,14 +453,15 @@ html, body, div, ul, li {
 <script src="../jquery.js"></script>
 <script src="js/infoCard.js"></script>
 <script>
-(function(){
-	var list = document.getElementById("members_list");
-	var infoList = new InfoBubble(list);
 
-	infoList.popup();
-	infoList.getInfo();
+    // Create new info card list
+    var deck = new InfoCards({ 
+        list: "members_list"
+    });
 
-})();
+    // Start deck
+    deck.init();
+
 </script>
 
 
