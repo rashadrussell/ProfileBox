@@ -28,7 +28,7 @@
      */
         getInfo : function () {
 
-            $(this.list).find("li").bind("click", function () {
+            $(this.list).find("li").on("click", function () {
 
                 var info = $(this).find("#profile_info").html();
 
@@ -50,7 +50,7 @@
 
                 $("body").prepend('<div id="transparentOverlay"></div>');
 
-                $("#transparentOverlay").bind("click", function () {
+                $("#transparentOverlay").on("click", function () {
 
                     $("#transparentOverlay").remove();
                     $("#bubble").remove();
@@ -83,7 +83,7 @@
 
             }
 
-            $(this.list).find("li").bind("click", function () {
+            $(this.list).find("li").on("click", function () {
 
                 setTransparentOverlay();
                 bubble($(this).find("#profile_info").html());
