@@ -1,16 +1,16 @@
-(function () {
+(function() {
 
-    
+    var infoCards;
 
     // Create InfoCard constructor
     // infoList parameter gets an unordered list DOM element
-    InfoCards = function (infoList) {
+    infoCards = function (infoList) {
 
             this.list = document.getElementById(infoList.list);
 
         };
 
-    InfoCards.prototype = {
+    infoCards.prototype = {
 
     /*
      *  Initialize InfoCards
@@ -93,6 +93,8 @@
         }
 
     };
+
+    this.InfoCards = infoCards;
 
 
 }());
