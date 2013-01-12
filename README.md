@@ -66,6 +66,7 @@ Instructions
 
 
 Bugs:
+=====
 
 1.) The width and height of the info bubble is fixed. It does not expand if content gets too big.
 
