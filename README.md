@@ -69,5 +69,5 @@ Bugs:
 
 1.) The width and height of the info bubble is fixed. It does not expand if content gets too big.
 
-2.) Web page back to the top of the screen when bubble appears. For user experience sake, it would be good
-	for the bubble to appear wherever the screen is alread scrolled to.
+2.) The web page scrolls back to the top of the screen when bubble appears. For user experience sake, it would be good
+	for the bubble to appear wherever the screen is alread scrolled to. This becomes noticeable on long pages.
