@@ -34,11 +34,6 @@
   list-style-type: none;
 }
 
-#bubble .skills li {
-    width: 80px;
-    float: left;
-}
-
 #transparentOverlay {
     width: 100%;
     height: 100%;
