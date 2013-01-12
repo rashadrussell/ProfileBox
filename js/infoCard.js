@@ -28,6 +28,8 @@
      */
         getInfo : function () {
 
+            console.dir($(this.list).children());
+
             $(this.list).find("li").on("click", function (e) {
 
                 e.preventDefault();
