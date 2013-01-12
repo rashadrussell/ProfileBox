@@ -1,16 +1,16 @@
 (function() {
 
-    var infoCards;
+    var infoCard;
 
     // Create InfoCard constructor
     // infoList parameter gets an unordered list DOM element
-    infoCards = function (infoList) {
+    infoCard = function (infoList) {
 
             this.list = document.getElementById(infoList.list);
 
         };
 
-    infoCards.prototype = {
+    infoCard.prototype = {
 
     /*
      *  Initialize InfoCards
@@ -28,9 +28,11 @@
      */
         getInfo : function () {
 
-            $(this.list).find("li").on("click", function () {
+            $(this.list).find("li").on("click", function (e) {
 
-                var info = $(this).find("#profile_info").html();
+                e.preventDefault();
+                
+                var info = $(this).find(".info").html();
 
             });
 
@@ -64,11 +66,11 @@
            */
             function bubble(info) {
 
-                $("body").append('<div id="bubble">' + info + '</div>');
+                $("body").prepend('<div id="bubble">' + info + '</div>');
 
                 var bubbleWidth = $("#bubble").width(),
                     windowWidth = $(window).width(),
-                    centerAlign = parseInt((windowWidth / 2), 10) - parseInt((bubbleWidth / 2), 10);
+                    centerAlign = Math.floor((windowWidth / 2), 10) - Math.floor((bubbleWidth / 2), 10);
 
                 $("#bubble").css("margin-left", centerAlign);
 
@@ -83,10 +85,12 @@
 
             }
 
-            $(this.list).find("li").on("click", function () {
+            $(this.list).find("li").on("click", function (e) {
+
+                e.preventDefault();
 
                 setTransparentOverlay();
-                bubble($(this).find("#profile_info").html());
+                bubble($(this).find(".info").html());
 
             });
 
@@ -94,7 +98,7 @@
 
     };
 
-    this.InfoCards = infoCards;
+    this.InfoCard = infoCard;
 
 
 }());

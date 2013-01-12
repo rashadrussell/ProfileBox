@@ -2,7 +2,10 @@
 <html>
 <head>
 <title>Hover Bubble</title>
+
+<link rel="stylesheet" type="text/css" href="infoCard.css" />
 <style>
+
 html, body, div, ul, li {
     margin: 0px;
     padding: 0px;
@@ -17,455 +20,423 @@ html, body, div, ul, li {
     padding: 20px;
 }
 
-#members_list {
-    overflow: hidden;
-    line-height: 20px;
-}
-
-#members_list a {
-	text-decoration: none;
-	color: #333;
-}
-
-#members_list li {
-    width: 200px;
-    float: left;
-}
-
-#members_list li #profile_info {
-  display: none;
-}
-
-#bubble {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    border-radius: 5px;
-    color: #333;
-    position: absolute;
-    z-index: 1000;
-    margin: 190px 390px 390px 390px;
-    padding: 10px;
-}
-
-#bubble li {
-  list-style-type: none;
-}
-
-#bubble .skills li {
-    width: 80px;
-    float: left;
-}
-
-#transparentOverlay {
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    position: fixed;
-    background-color: black;
-    opacity: 0.5;
-}
-
-
 </style>
-
-
-<script type="text/javascript" src="../jquery.js"></script>
-<script type="text/javascript" src="js/infoCard.js"></script>
     
 </head>
 
 <body>
 <div id="container">
-    
-    <ul id="members_list">
-<li><a href="#">Rashad Russell<span class="position_title" style="color: #662a2a;"><span class="position_title" style="color: #662a2a;">(Co-Chair)</span></span></a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Rashad Russell (Co-Chair)</h4>
-</li>
-<li><strong>Website:</strong> <a href="http://www.rashadrussell.com" target="_blank">www.rashadrussell.com</a></li>
-<li><strong>Github:</strong> <a href="https://github.com/rashadrussell" target="_blank">github.com/rashadrussell</a></li>
-<li><strong>Email:</strong> rashadrussellwebdesign@gmail.com</li>
-<li><strong>Year:</strong> Sophomore</li>
-<li>
-<p class="description"><strong>Description:</strong> I am a web programmer who loves the frontend, UI design, and am not afraid to jump into the backend if needed.</p>
-</li>
-<li>
-<h4>Skills</h4>
-<ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>PHP</li>
-<li>Java</li>
-<li>WordPress</li>
-<li>Photoshop</li>
-<li>Git</li>
-</ul>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Taylor Fairbank<span class="position_title" style="color: #662a2a;"><span class="position_title" style="color: #662a2a;">(Co-Chair)</span></span><br />
-</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Taylor Fairbank (Co-Chair)</h4>
-</li>
-<li><strong>Github:</strong> <a href="https://github.com/jtfairbank" target="_blank">github.com/jtfairbank</a></li>
-<li><strong>Email:</strong> jfairban5@illinois.edu</li>
-<li><strong>Year:</strong> Junior</li>
-<li>
-<p class="description"><strong>Description: </strong>Backend Developer</p>
-</li>
-<li>
-<h4>Skills</h4>
-<ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>Django</li>
-<li>Java</li>
-<li>PHP</li>
-<li>C</li>
-<li>C++</li>
-<li>Git</li>
-</ul>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Jatin Pandey<span class="position_title" style="color: #662a2a;"><span class="position_title" style="color: #662a2a;">(Tresurer)</span></span></a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Jatin Pandey (Co-Chair)</h4>
-</li>
-<li><strong>Github:</strong> <a href="https://github.com/jatinpandey" target="_blank">github.com/jatinpandey</a></li>
-<li><strong>Email:</strong> pandey5@illinois.edu</li>
-<li><strong>Year:</strong> Junior</li>
-<li>
-<p class="description"><strong>Description: </strong>Frontend Developer</p>
-</li>
-<li>
-<h4>Skills</h4>
-<ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>PHP</li>
-<li>Java</li>
-<li>C</li>
-<li>C++</li>
-</ul>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Jay Chae</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Jay Chae</h4>
-</li>
-<li><strong>Github:</strong> <a href="https://github.com/wayfare" target="_blank">github.com/wayfare</a></li>
-<li><strong>Email:</strong> ejaychae08@gmail.com</li>
-<li><strong>Year:</strong> Junior</li>
-<li>
-<p class="description"><strong>Description: </strong>Web Developer</p>
-</li>
-<li>
-<h4>Skills</h4>
-<ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>Java</li>
-<li>Rails</li>
-<li>Python</li>
-<li>Git</li>
-<li>Vim</li>
-</ul>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Nathan Hibner</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Nathan Hibner</h4>
-</li>
-<li><strong>Year:</strong> Junior</li>
-<li>
-<p class="description"><strong>Description: </strong>Developer</p>
-</li>
-<li>
-<h4>Skills</h4>
-<ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>Objective-C</li>
-<li>iOS</li>
-<li>Android</li>
-<li>PHP</li>
-<li>Java</li>
-<li>C++</li>
-</ul>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Daniel Tong</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Daniel Tong</h4>
-</li>
-<li><strong>Year:</strong> Junior</li>
-</ul></div>
-</li>
-<li><a href="#">Michael Marshall</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Michael Marshall</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Akhil Mallavarapu</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Akhil Mallavarapu</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Kevin Sullivan</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Kevin Sullivan</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Eric Mills</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Eric Mills</h4>
-</li>
-<li><strong>Website: </strong> <a href="http://crearc.net/" target="_blank">www.crearc.net/</li>
-<li><strong>Year:</strong> Junior</li>
-<li><strong>Description:</strong> Web Developer</li>
-<li>
-<h4>Skills</h4>
-<ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>Djangp</li>
-<li>Java</li>
-<li>PHP</li>
-<li>C</li>
-<li>C++</li>
-</ul>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Martin Rosenberg</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Martin Rosenberg</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Zhiyuan Zheng</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Zhiyuan Zheng</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Kenny Wang</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Kenny Wang</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Edward Wibisono</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Edward Wibisono</h4>
-</li>
-</ul></div>
-</li>
-<li><a href="#">Kay Byun</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Kay Byun</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Thomas Chen</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Thomas Chen</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Nathan Arvan</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Nathan Arvan</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Daeyun Shin</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Daeyun Shin</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Jake Esmael</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Jake Esmael</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Alhaji Mansaray</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Alhaji Mansaray</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Ola Giwa</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Ola Giwa</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Brad Dushman</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Brad Dushman</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Bob Ren</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Bob Ren</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Dhruv Seth</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Dhruv Seth</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Joshua Heng</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Joshua Heng</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Mayank Jain</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Mayank Jain</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Neel Kothari</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Neel Kothari</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Charlie Chen</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Charlie Chen</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Dan Carvill</a>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Dan Carvill</h4>
-</li>
-</ul>
-</div>
-</li>
-<li><a href="#">Your Name Here?<br />
-</a></p>
-<div id="profile_info">
-<ul>
-<li>
-<h4>Your Name Here?</h4>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-        
-    
-</div>
 
+<!-- Membership List -->   
+<ul id="infoCard_list">
 
+    <li>
+        <a href="#">Rashad Russell (Co-Chair)</a>
+        <div class="info">
+            <ul>
+                <li><h4>Rashad Russell (Co-Chair)</h4></li>
+                <li><strong>Website:</strong> <a href="http://www.rashadrussell.com" target="_blank">www.rashadrussell.com</a></li>
+                <li><strong>Github:</strong> <a href="https://github.com/rashadrussell" target="_blank">github.com/rashadrussell</a></li>
+                <li><strong>Email:</strong> rashadrussellwebdesign@gmail.com</li>
+                <li><strong>Year:</strong> Sophomore</li>
+                <li><p class="description"><strong>Description:</strong> I am a web programmer who loves the frontend, UI design, and am interested in internship opportunities.</p></li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>Wordpress</li>
+                        <li>Photoshop</li>
+                        <li>Git</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Taylor Fairbank (Co-Chair)</a>
+        <div class="info">
+            <ul>
+                <li><h4>Taylor Fairbank (Co-Chair)</h4></li>
+                <li><strong>Github:</strong> <a href="https://github.com/jtfairbank" target="_blank">github.com/jtfairbank</a></li>
+                <li><strong>Email:</strong> jfairban5@illinois.edu</li>
+                <li><strong>Year:</strong> Junior</li>
+                <li><p class="description"><strong>Description:</strong> Backend Developer</p></li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Django</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Git</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Jatin Pandey (Tresurer)</a>
+        <div class="info">
+            <ul>
+                <li><h4>Jatin Pandey (Co-Chair)</h4></li>
+                <li><strong>Github:</strong> <a href="https://github.com/jatinpandey" target="_blank">github.com/jatinpandey</a></li>
+                <li><strong>Email:</strong> pandey5@illinois.edu</li>
+                <li><strong>Year:</strong> Junior</li>
+                <li><p class="description"><strong>Description: </strong>Developer</p></li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Jay Chae</a>
+        <div class="info">
+            <ul>
+                <li><h4>Jay Chae</h4></li>
+                <li><strong>Github:</strong> <a href="https://github.com/wayfare" target="_blank">github.com/wayfare</a></li>
+                <li><strong>Email:</strong> ejaychae08@gmail.com</li>
+                <li><strong>Year:</strong> Junior</li>
+                <li><p class="description"><strong>Description:</strong> Web Developer</p></li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>Rails</li>
+                        <li>Python</li>
+                        <li>Git</li>
+                        <li>Vim</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Nathan Hibner</a>
+        <div class="info">
+            <ul>
+                <li><h4>Nathan Hibner</h4></li>
+                <li><strong>Email:</strong> hibner1@illinois.edu</li>
+                <li><strong>Year:</strong> Junior</li>
+                <li><p class="description"><strong>Description:</strong> Web and Mobile Developer</p></li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Objective-C</li>
+                        <li>iOS</li>
+                        <li>Android</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Michael Marshall</a>
+        <div class="info">
+            <ul>
+                <li><h4>Michael Marshall</h4></li>
+                <li><strong>Github:</strong> <a href=" https://github.com/mtmarsh2" target="_blank">github.com/mtmarsh2</a></li>
+                <li><strong>Email:</strong> mtmarsh2@illinois.edu</li>
+                <li><strong>Year:</strong> Sophomore</li>
+                <li><strong>Description:</strong> Backend Developer</li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Photoshop</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Akhil Mallavarapu</a>
+        <div class="info">
+            <ul>
+                <li><h4>Akhil Mallavarapu</h4></li>
+                <li><strong>Year:</strong> Freshman</li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Kevin Sullivan</a>
+        <div class="info">
+            <ul>
+                <li><h4>Kevin Sullivan</h4></li>
+                <li><strong>Github:</strong> <a href="https://github.com/bitantics/" target="_blank">github.com/bitantics</a></li>
+                <li><strong>Year:</strong> Junior</li>
+                <li><strong>Description:</strong> Developer</li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Django</li>
+                        <li>Java</li>
+                        <li>Git</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Eric Mills</a>
+        <div class="info">
+            <ul>
+                <li><h4>Eric Mills</h4></li>
+                <li><strong>Website:</strong> <a href="http://crearc.net/" target="_blank">www.crearc.net/</a></li>
+                <li><strong>Email:</strong> eric@crearc.net</li>
+                <li><strong>Year:</strong> Junior</li>
+                <li><strong>Description:</strong> Web Developer</li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Django</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>C</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Neel Kothari</a>
+        <div class="info">
+            <ul>
+                <li><h4>Neel Kothari</h4></li>
+                <li><strong>Website:</strong> <a href="http://www.neelkothari.com" target="_blank">www.neelkothari.com</a></li>
+                <li><strong>Github:</strong> <a href="https://github.com/neelk07" target="_blank">github.com/neekk07</a></li>
+                <li><strong>Email:</strong> neelk07@gmail.com</li>
+                <li><strong>Year:</strong> Freshman</li>
+                <li><p class="description"><strong>Description:</strong> Web Developer</p></li>
+                <li>
+                    <h4>Skills</h4>
+                    <ul class="skills">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Django</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Git</li>
+                        <li>Vim</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Daniel Tong</a>
+        <div class="info">
+            <ul>
+                <li><h4>Daniel Tong</h4></li>
+                <li><strong>Year:</strong> Junior</li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Martin Rosenberg</a>
+        <div class="info">
+            <ul>
+                <li><h4>Martin Rosenberg</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Zhiyuan Zheng</a>
+        <div class="info">
+            <ul>
+                <li><h4>Zhiyuan Zheng</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Kenny Wang</a>
+        <div class="info">
+            <ul>
+                <li><h4>Kenny Wang</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Edward Wibisono</a>
+        <div class="info">
+            <ul>
+                <li><h4>Edward Wibisono</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Kay Byun</a>
+        <div class="info">
+            <ul>
+                <li><h4>Kay Byun</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Thomas Chen</a>
+        <div class="info">
+            <ul>
+                <li><h4>Thomas Chen</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Nathan Arvan</a>
+        <div class="info">
+            <ul>
+                <li><h4>Nathan Arvan</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Daeyun Shin</a>
+        <div class="info">
+            <ul>
+                <li><h4>Daeyun Shin</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Jake Esmael</a>
+        <div class="info">
+            <ul>
+                <li><h4>Jake Esmael</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Alhaji Mansaray</a>
+        <div class="info">
+            <ul>
+                <li><h4>Alhaji Mansaray</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Ola Giwa</a>
+        <div class="info">
+            <ul>
+                <li><h4>Ola Giwa</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Brad Dushman</a>
+        <div class="info">
+            <ul>
+                <li><h4>Brad Dushman</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Bob Ren</a>
+        <div class="info">
+            <ul>
+                <li><h4>Bob Ren</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Dhruv Seth</a>
+        <div class="info">
+            <ul>
+                <li><h4>Dhruv Seth</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Joshua Heng</a>
+        <div class="info">
+            <ul>
+                <li><h4>Joshua Heng</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Mayank Jain</a>
+        <div class="info">
+            <ul>
+                <li><h4>Mayank Jain</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Charlie Chen</a>
+        <div class="info">
+            <ul>
+                <li><h4>Charlie Chen</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Dan Carvill</a>
+        <div class="info">
+            <ul>
+                <li><h4>Dan Carvill</h4></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#">Your Name Here?</a>
+        <div class="info">
+            <ul>
+                <li><h4>Your Name Here?</h4></li>
+            </ul>
+        </div>
+    </li>
 
+</ul>
+<!-- End Membership List -->
 
-</body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="js/infoCard.js"></script>
+
 <script>
 
     // Create new info card list
-    var deck = new InfoCards({ 
-        list: "members_list"
+    var deck = new InfoCard({ 
+        list: "infoCard_list"
     });
 
     // Start deck
     deck.init();
 
 </script>
+</body>
 </html>
