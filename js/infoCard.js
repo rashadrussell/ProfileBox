@@ -66,6 +66,8 @@
            */
             function bubble(info) {
 
+                info = !info ? "" : info;
+
                 $("body").prepend('<div id="bubble">' + info + '</div>');
 
                 var bubbleWidth = $("#bubble").width(),

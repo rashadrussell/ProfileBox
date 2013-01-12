@@ -69,6 +69,5 @@ Bugs:
 
 1.) The width and height of the info bubble is fixed. It does not expand if content gets too big.
 
-2.) If any member other than the first one is clicked, undefined will be returned 
-on the bubble. If no information is given. I at least put all of the members names
-on the bubble to cover this minor problem up.
+2.) Web page back to the top of the screen when bubble appears. For user experience sake, it would be good
+	for the bubble to appear wherever the screen is alread scrolled to.
